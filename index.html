@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Learn How to Fly in 4 Weeks — a practical, safe digital book that teaches step-by-step flight fundamentals, training drills, and confidence-building exercises. Download the flying guide and start your flight journey today." />
+  <title>Learn How to Fly in 4 Weeks — Digital Book</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="cover.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="#hero">✈️ Learn to Fly</a>
+      <ul class="nav-links">
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#author">Author</a></li>
+        <li><a class="cta-nav" href="#buy">Buy Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Learn How to Fly in 4 Weeks</h1>
+          <p class="subtitle">A practical, safety-first digital guide that turns nervous beginners into confident pilots — step-by-step, week-by-week.</p>
+          <ul class="hero-features">
+            <li>Week-by-week training plan</li>
+            <li>Checklists & drills you can practice anywhere</li>
+            <li>Safety-first mindset & instructor tips</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#buy">Download the Flying Guide</a>
+            <a class="btn ghost" href="#sample">Get a Free Sample</a>
+          </div>
+          <p class="risk">30-day money-back guarantee • Instant PDF download</p>
+        </div>
+
+        <div class="hero-art">
+          <!-- Book cover SVG -->
+          <img src="cover.svg" alt="Cover: Learn How to Fly in 4 Weeks — blue sky illustration with a stylized paper plane" class="book-cover" />
+          <div class="price-badge" aria-hidden="true">€19</div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#benefits" aria-hidden="true">↓</a>
+    </section>
+
+    <section id="benefits" class="section" aria-labelledby="benefits-heading">
+      <div class="container">
+        <h2 id="benefits-heading">What's inside the book</h2>
+        <div class="features-grid">
+          <article>
+            <h3>Practical Flight Training</h3>
+            <p>Clear flight drills, checklists and exercises you can use with any instructor or simulator.</p>
+          </article>
+          <article>
+            <h3>Confidence Building</h3>
+            <p>Mental prep, decision-making frameworks and progressive exposure to reduce fear and improve skill.</p>
+          </article>
+          <article>
+            <h3>Safety & Regulations</h3>
+            <p>Concise overview of core safety concepts and how to work with your flight school effectively.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section pale" aria-labelledby="reviews-heading">
+      <div class="container">
+        <h2 id="reviews-heading">What readers say</h2>
+        <div class="reviews-grid" role="list">
+          <blockquote class="review-card" role="listitem">
+            <p class="quote">"This guide took my confidence from zero to solo-ready. Bite-sized lessons made practice easy."</p>
+            <footer>— Maria P., Student Pilot</footer>
+          </blockquote>
+
+          <blockquote class="review-card" role="listitem">
+            <p class="quote">"Exactly what every beginner needs: practical, concise and reassuring." </p>
+            <footer>— Ahmed S., Flight School Instructor</footer>
+          </blockquote>
+
+          <blockquote class="review-card" role="listitem">
+            <p class="quote">"The week-by-week plan is brilliant. I flew my first solo after week 10 overall and felt prepared."</p>
+            <footer>— Lucas K., Private Pilot</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="author" class="section" aria-labelledby="author-heading">
+      <div class="container author-grid">
+        <div class="author-photo" aria-hidden="true">
+          <!-- simple avatar -->
+          <svg width="150" height="150" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Author portrait illustration">
+            <circle cx="50" cy="30" r="18" fill="#E9F6FF"/>
+            <rect x="20" y="52" width="60" height="30" rx="6" fill="#F2F7FB"/>
+            <text x="50" y="95" text-anchor="middle" font-size="8" fill="#666">Author</text>
+          </svg>
+        </div>
+        <div>
+          <h2 id="author-heading">About the author</h2>
+          <p><strong>Alex Rivers</strong> is a certified flight instructor with over 12 years of teaching experience and 3,500+ flight hours. Alex focuses on safety-first techniques and building confident, competent pilots.</p>
+          <p class="cred">CFI, Instrument-rated • Writer • Flight school collaborator</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy" class="section accent" aria-labelledby="buy-heading">
+      <div class="container">
+        <h2 id="buy-heading">Buy / Download</h2>
+        <div class="buy-grid">
+          <div class="pricing">
+            <div class="price">€19 <span class="small">one-time</span></div>
+            <ul>
+              <li>Immediate PDF download</li>
+              <li>Printable checklists & bonus sample lesson</li>
+              <li>30-day money-back guarantee</li>
+            </ul>
+            <a class="btn primary big" id="buy-now" href="#checkout" onclick="event.preventDefault(); openCheckout();">Buy Now — €19</a>
+          </div>
+          <div class="checkout" id="checkout" aria-hidden="false">
+            <h3>Secure Checkout (demo)</h3>
+            <form id="purchase-form" onsubmit="event.preventDefault(); completePurchase();">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" />
+              <label for="coupon">Coupon code (optional)</label>
+              <input id="coupon" name="coupon" type="text" placeholder="FLY10" />
+              <button class="btn primary" type="submit">Complete Purchase — €19</button>
+            </form>
+            <p class="small">This is a demo checkout for the course project. No payment is processed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sample" class="section" aria-labelledby="sample-heading">
+      <div class="container">
+        <h2 id="sample-heading">Free sample</h2>
+        <p>Get a free 5-page sample containing: Week 1 checklist, a basic drill, and a safety reminder.</p>
+        <a class="btn ghost" href="sample.pdf" download>Download free sample (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Learn to Fly — All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="#hero">Top</a> · <a href="#privacy">Privacy</a> · <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
